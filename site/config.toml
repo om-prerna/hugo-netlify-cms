@@ -1,9 +1,25 @@
-baseurl = "/"
+baseURL = "/"
 languageCode = "en-us"
-languageLang = "en"
-title = "Homepage"
+title = "दरिया साहब"
+theme = "Diary"
+copyright = "२०२०, प्रस्तुत सभी ग्रन्थ, दरियापन्थ के प्रचारक व सेवक स्व. अरुण दास जी के जीवन भर के परिश्रम से डिजिटल हो पाए हैं. Talk to <a href='https://kgaurav.online' target='_blank' >creator/maintainer</a>"
 
-# RSS, categories and tags disabled for an easy start
-# See configuration options for more details: 
-# https://gohugo.io/getting-started/configuration/#toml-configuration
-disableKinds = ["RSS", "taxonomy", "taxonomyTerm"]
+[params]
+subtitle = "ग्रन्थ संग्रह"
+
+[taxonomies]
+   tag = "tags"
+   category = "categories"
+
+[[menu.main]]
+url = "/life"
+name = "परिचय"
+weight = 1
+[[menu.main]]
+url = "/teachings/"
+name = "शिक्षायें"
+weight = 2
+[[menu.main]]
+url = "/ashram"
+name = "आश्रम"
+weight = 3
